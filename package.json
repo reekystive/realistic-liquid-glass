@@ -1,0 +1,11 @@
+{
+  "name": "realistic-liquid-glass",
+  "version": "0.1.0",
+  "description": "iOS 26 like liquid glass React component",
+  "keywords": [],
+  "license": "MIT",
+  "author": "reekystive",
+  "type": "module",
+  "main": "./dist/index.js",
+  "packageManager": "pnpm@10.11.0"
+}
