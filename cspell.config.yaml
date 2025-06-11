@@ -4,6 +4,8 @@ words:
   - grayscale
   - Mingxuan
   - nodenext
+  - predeploy
+  - prepack
   - reekystive
   - unplugin
   - Vite

@@ -50,7 +50,9 @@
     "test:coverage": "vitest run --coverage",
     "test:update": "vitest run --update",
     "test:watch": "vitest --watch",
-    "prepare": "pnpm run build"
+    "prepack": "pnpm run build",
+    "predeploy": "pnpm run build",
+    "deploy": "tsx scripts/gh-pages-deploy.mts"
   },
   "dependencies": {
     "clsx": "^2.1.1",
