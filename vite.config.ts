@@ -6,6 +6,7 @@ import dts from 'unplugin-dts/vite';
 import { defineConfig } from 'vite';
 import tsconfigPaths from 'vite-tsconfig-paths';
 import packageJson from './package.json' with { type: 'json' };
+import { bannerContent } from './scripts/banner.mjs';
 
 const entries: Record<string, string> = {
   index: './src/index.ts',
@@ -26,6 +27,7 @@ export default defineConfig({
     rollupOptions: {
       output: {
         preserveModules: true,
+        banner: bannerContent,
       },
       external: regexOfExternalDeps,
     },

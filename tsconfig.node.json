@@ -29,6 +29,7 @@
     "./.*.mjs",
     "./*.cjs",
     "./.*.cjs",
+    "scripts",
     ".storybook/main.ts",
     ".storybook/manager.ts"
   ],
