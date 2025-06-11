@@ -1,11 +1,12 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
+import { LiquidGlass } from './liquid-glass.tsx';
 
 const meta: Meta = {
-  title: 'Demo',
+  title: 'LiquidGlass',
 };
 
 export default meta;
 
 export const Default: StoryObj = {
-  render: () => <div className="text-pink-800 dark:text-pink-200">Hello</div>,
+  render: () => <LiquidGlass />,
 };

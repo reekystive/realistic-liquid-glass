@@ -2,7 +2,7 @@
   "editor.rulers": [80, 120],
   "eslint.useFlatConfig": true,
   "eslint.format.enable": true,
-  "eslint.validate": ["typescript", "typescriptreact", "javascript", "javascriptreact", "css", "tailwindcss"],
+  "eslint.validate": ["typescript", "typescriptreact", "javascript", "javascriptreact"],
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit"
   },
@@ -27,5 +27,6 @@
   },
   "[tailwindcss]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "tailwindCSS.experimental.configFile": "src/global.css"
 }

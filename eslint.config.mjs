@@ -1,6 +1,4 @@
 import cspellPlugin from '@cspell/eslint-plugin';
-import css from '@eslint/css';
-import { tailwindSyntax } from '@eslint/css/syntax';
 import eslintJsPlugin from '@eslint/js';
 import eslintConfigPrettier from 'eslint-config-prettier';
 import prettierPlugin from 'eslint-plugin-prettier';
@@ -20,9 +18,6 @@ const STORYBOOK_FILES = ['./src/**/{,.}*.stories.{,c,m}{j,t}s{,x}'];
 
 /** @type {string[]} */
 const STORYBOOK_MAIN_FILES = ['./.storybook/main.{,c,m}{j,t}s'];
-
-/** @type {string[]} */
-const CSS_FILES = ['**/*.css'];
 
 const typescriptConfigs = /** @type {import('eslint').Linter.Config[]} */ (
   tsEslint.config({
@@ -104,27 +99,6 @@ const eslintConfig = [
       '@typescript-eslint/restrict-template-expressions': ['error', { allowNumber: true }],
       '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
       '@typescript-eslint/no-confusing-void-expression': 'off',
-    },
-  },
-
-  // config for css
-  {
-    files: CSS_FILES,
-    plugins: { css },
-    language: 'css/css',
-    languageOptions: {
-      customSyntax: tailwindSyntax,
-    },
-    rules: {
-      ...css.configs.recommended.rules,
-    },
-  },
-  {
-    files: CSS_FILES,
-    rules: {
-      'css/no-invalid-at-rules': 'off',
-      'css/prefer-logical-properties': 'warn',
-      'css/use-layers': 'warn',
     },
   },
 
