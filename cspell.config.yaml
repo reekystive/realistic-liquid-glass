@@ -2,12 +2,14 @@ words:
   - avenir
   - clsx
   - grayscale
+  - lerp
   - Mingxuan
   - nodenext
   - predeploy
   - prepack
   - reekystive
   - unplugin
+  - usehooks
   - Vite
   - Vitest
   - WCAG
