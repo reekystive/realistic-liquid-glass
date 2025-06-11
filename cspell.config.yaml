@@ -11,6 +11,7 @@ words:
   - Vite
   - Vitest
   - WCAG
+  - WWDC
 flagWords:
   - blacklist -> blocklist
   - whitelist -> allowlist

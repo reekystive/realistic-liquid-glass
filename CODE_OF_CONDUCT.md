@@ -78,6 +78,22 @@ chore: 📦 update dependencies
 fix: 🐛 something is not working
 ```
 
+## CSS and Styling
+
+### Tailwind CSS Prefix
+
+This project uses `rlg:` prefix for all Tailwind CSS classes to prevent style pollution in consumer projects:
+
+```tsx
+// ✅ Correct - use rlg: prefix
+<div className="rlg:flex rlg:items-center rlg:px-4">
+
+// ❌ Wrong - no prefix
+<div className="flex items-center px-4">
+```
+
+The prefix is configured in Tailwind CSS configuration to ensure all utility classes are prefixed.
+
 ## Guidelines
 
 - Ensure compatibility with Android, iOS, Windows, macOS, Linux, etc.
@@ -95,5 +111,6 @@ Comments are written in English. DO NOT write too many comments, prefer to write
 
 ## Language
 
-- Always use English for comments, code, and documentation.
-- Use other languages for communication if needed.
+- **IMPORTANT**: Always use English for ALL code, comments, documentation, memories, commit messages, and any written content in this project.
+- Only use other languages for conversational communication with users.
+- All technical documentation should be in English to maintain consistency and accessibility.

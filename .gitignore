@@ -26,3 +26,5 @@ storybook-static/
 
 # npm pack artifacts
 /*.tgz
+
+workspace-tmp/
