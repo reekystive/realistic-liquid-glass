@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react-vite';
 import { LiquidGlass } from './liquid-glass.tsx';
 
 const meta: Meta = {
-  title: 'LiquidGlass',
+  title: 'Components/LiquidGlass',
 };
 
 export default meta;
