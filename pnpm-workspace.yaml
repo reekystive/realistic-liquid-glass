@@ -1,0 +1,2 @@
+patchedDependencies:
+  unplugin-dts: patches/unplugin-dts.patch
