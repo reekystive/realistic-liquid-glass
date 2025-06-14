@@ -42,7 +42,8 @@
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
-    "build": "tsc --build tsconfig.json && vite build",
+    "build": "pnpm run lint:tsc && vite build",
+    "build:storybook": "pnpm run lint:tsc && storybook build",
     "dev": "storybook dev",
     "lint:eslint": "eslint . --cache --cache-strategy content --cache-location ./node_modules/.cache/eslint/eslintcache.json --max-warnings 0 --report-unused-disable-directives",
     "lint:tsc": "tsc --build tsconfig.json",
@@ -51,7 +52,7 @@
     "test:update": "vitest run --update",
     "test:watch": "vitest --watch",
     "prepack": "pnpm run build",
-    "predeploy": "pnpm run build",
+    "predeploy": "pnpm run build:storybook",
     "deploy": "tsx scripts/gh-pages-deploy.mts"
   },
   "dependencies": {
