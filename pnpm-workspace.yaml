@@ -1,2 +1,7 @@
+onlyBuiltDependencies:
+  - '@parcel/watcher'
+  - '@swc/core'
+  - '@tailwindcss/oxide'
+  - esbuild
 patchedDependencies:
   unplugin-dts: patches/unplugin-dts.patch
