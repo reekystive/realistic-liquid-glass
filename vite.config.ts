@@ -16,6 +16,15 @@ const entries: Record<string, string> = {
 const externalDeps = [...Object.keys(packageJson.dependencies), ...Object.keys(packageJson.peerDependencies)];
 export const regexOfExternalDeps = externalDeps.map((dep) => new RegExp(`^${dep}(?:$|/)`));
 
+const dtsPlugin = dts({
+  bundleTypes: true,
+  outDirs: ['dist'],
+  tsconfigPath: 'tsconfig.web.json',
+});
+
+// @ts-expect-error - adding custom identifier to the plugin to filter it out in storybook builds
+dtsPlugin.identifier = 'unplugin-dts/vite';
+
 // https://vitejs.dev/config/
 export default defineConfig({
   build: {
@@ -34,15 +43,6 @@ export default defineConfig({
     sourcemap: true,
     emptyOutDir: true,
   },
-  plugins: [
-    react(),
-    tailwindcss(),
-    tsconfigPaths(),
-    dts({
-      bundleTypes: true,
-      outDirs: ['dist'],
-      tsconfigPath: 'tsconfig.web.json',
-    }),
-  ],
+  plugins: [react(), tailwindcss(), tsconfigPaths(), dtsPlugin],
   test: {},
 });
