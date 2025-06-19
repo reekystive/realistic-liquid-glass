@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 patchedDependencies:
+  eslint-plugin-storybook:
+    hash: bbfc2b8d8a59417f8926ac8b549105b40ae8974beec3a7139ee60b9028fd4744
+    path: patches/eslint-plugin-storybook.patch
   unplugin-dts:
     hash: bc69c45e6b7485744204e308b7291d20565bbc473814057ac73f57b4a507a51f
     path: patches/unplugin-dts.patch
@@ -85,7 +88,7 @@ importers:
         version: 0.4.20(eslint@9.29.0(jiti@2.4.2))
       eslint-plugin-storybook:
         specifier: ^9.0.9
-        version: 9.0.9(eslint@9.29.0(jiti@2.4.2))(storybook@9.0.9(@testing-library/dom@10.4.0)(prettier@3.5.3))(typescript@5.8.3)
+        version: 9.0.9(patch_hash=bbfc2b8d8a59417f8926ac8b549105b40ae8974beec3a7139ee60b9028fd4744)(eslint@9.29.0(jiti@2.4.2))(storybook@9.0.9(@testing-library/dom@10.4.0)(prettier@3.5.3))(typescript@5.8.3)
       gh-pages:
         specifier: ^6.3.0
         version: 6.3.0
@@ -5429,7 +5432,7 @@ snapshots:
       string.prototype.matchall: 4.0.12
       string.prototype.repeat: 1.0.0
 
-  eslint-plugin-storybook@9.0.9(eslint@9.29.0(jiti@2.4.2))(storybook@9.0.9(@testing-library/dom@10.4.0)(prettier@3.5.3))(typescript@5.8.3):
+  eslint-plugin-storybook@9.0.9(patch_hash=bbfc2b8d8a59417f8926ac8b549105b40ae8974beec3a7139ee60b9028fd4744)(eslint@9.29.0(jiti@2.4.2))(storybook@9.0.9(@testing-library/dom@10.4.0)(prettier@3.5.3))(typescript@5.8.3):
     dependencies:
       '@typescript-eslint/utils': 8.34.0(eslint@9.29.0(jiti@2.4.2))(typescript@5.8.3)
       eslint: 9.29.0(jiti@2.4.2)

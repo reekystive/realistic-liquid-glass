@@ -5,3 +5,4 @@ onlyBuiltDependencies:
   - esbuild
 patchedDependencies:
   unplugin-dts: patches/unplugin-dts.patch
+  eslint-plugin-storybook: patches/eslint-plugin-storybook.patch

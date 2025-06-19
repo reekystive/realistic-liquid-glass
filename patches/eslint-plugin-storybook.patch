@@ -1,0 +1,17 @@
+diff --git a/dist/index.d.ts b/dist/index.d.mts
+similarity index 100%
+rename from dist/index.d.ts
+rename to dist/index.d.mts
+diff --git a/package.json b/package.json
+index 3ac8ace78638f26482d99e45c632a42fb759c88a..fdc3d7c65e7f7fd31a8d28a8d211505126d23609 100644
+--- a/package.json
++++ b/package.json
+@@ -25,7 +25,7 @@
+       "email": "rafaelrozon.developer@gmail.com"
+     }
+   ],
+-  "main": "dist/index.js",
++  "main": "dist/index.mjs",
+   "files": [
+     "dist/**/*",
+     "README.md"
