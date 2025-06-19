@@ -1,3 +1,4 @@
 @layer theme, base, components, utilities;
-@import 'tailwindcss/theme.css' layer(theme) prefix(rlg);
-@import 'tailwindcss/utilities.css' layer(utilities) prefix(rlg);
+@import 'tailwindcss/theme.css' layer(theme);
+@import 'tailwindcss/base.css' layer(base);
+@import 'tailwindcss/utilities.css' layer(utilities);

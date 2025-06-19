@@ -1,1 +1,1 @@
-export { LiquidGlass } from './liquid-glass.tsx';
+export { LiquidGlass } from './liquid-glass.js';

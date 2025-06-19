@@ -1,24 +1,14 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": "./tsconfig.base.json",
   "compilerOptions": {
-    "skipLibCheck": true,
-    "module": "NodeNext",
-    "target": "ESNext",
-    "moduleResolution": "nodenext",
-    "resolvePackageJsonImports": true,
-    "resolvePackageJsonExports": true,
-    "resolveJsonModule": true,
-    "strict": true,
-    "noUncheckedIndexedAccess": true,
-    "useUnknownInCatchVariables": true,
     "types": ["node"],
-    "allowJs": true,
-    "checkJs": true,
-    "incremental": true,
-    "declaration": true,
-    "declarationMap": true,
     "rootDir": ".",
-    "outDir": "./node_modules/.cache/tsc-node"
+    "outDir": "./node_modules/.cache/tsc-node",
+    // https://github.com/microsoft/TypeScript/issues/30925#issuecomment-483371766
+    "tsBuildInfoFile": "./node_modules/.cache/tsc-node/tsconfig.node.tsbuildinfo",
+    "emitDeclarationOnly": true,
+    "resolveJsonModule": true
   },
   "include": [
     "./*.ts",
@@ -29,9 +19,8 @@
     "./.*.mjs",
     "./*.cjs",
     "./.*.cjs",
-    "scripts",
-    ".storybook/main.ts",
-    ".storybook/manager.ts"
+    "./.storybook/main.ts",
+    "./.storybook/manager.ts"
   ],
   "exclude": []
 }

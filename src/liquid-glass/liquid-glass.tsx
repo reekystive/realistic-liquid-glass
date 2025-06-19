@@ -1,4 +1,4 @@
-import { cn } from '#src/utils/cn.ts';
+import { cn } from '#src/utils/cn.js';
 import { FC, ReactNode } from 'react';
 
 export const LiquidGlass: FC<{ className?: string; children?: ReactNode }> = ({ className }) => {
@@ -6,7 +6,7 @@ export const LiquidGlass: FC<{ className?: string; children?: ReactNode }> = ({ 
     <div
       className={cn(
         'rlg-root',
-        'rlg:flex rlg:flex-col rlg:items-center rlg:justify-center rlg:rounded-lg rlg:border rlg:px-2 rlg:py-4 rlg:font-mono rlg:text-sm',
+        'flex flex-col items-center justify-center rounded-lg border px-2 py-4 font-mono text-sm',
         className
       )}
     >
