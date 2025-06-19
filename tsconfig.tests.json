@@ -4,7 +4,7 @@
   "compilerOptions": {
     "module": "esnext",
     "moduleResolution": "bundler",
-    "types": ["vite/client", "node"],
+    "types": ["node"],
     "rootDir": ".",
     "outDir": "./node_modules/.cache/tsc-tests",
     // https://github.com/microsoft/TypeScript/issues/30925#issuecomment-483371766
@@ -12,6 +12,6 @@
     "jsx": "react-jsx",
     "emitDeclarationOnly": true
   },
-  "include": ["**/__tests__/"],
+  "include": ["**/__tests__/", "./src/vite-env.d.ts"],
   "exclude": ["**/node_modules/"]
 }
